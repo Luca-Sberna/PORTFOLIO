@@ -3,7 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "./Sidebar";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import foto from "../assets/imgs/foto.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,8 +20,29 @@ const Home = () => {
             <h1>Luca Sberna</h1>
             <span className="red py-4">Full Stack Developer</span>
             <div className="text-center">
-              <AiFillGithub className="fs-3 me-3" />
-              <BsLinkedin className="fs-3" />
+              <Link
+                target="_blank"
+                to={"https://github.com/Luca-Sberna"}
+                className="text-reset "
+              >
+                <AiFillGithub className="img-hover fs-3 me-3" />
+              </Link>
+              <Link
+                target="_blank"
+                to={`mailto:${"sberna.luca.ibiza@gmail.com"}`}
+                className="text-reset "
+              >
+                <MdEmail className="img-hover fs-3 me-3" />
+              </Link>
+              <Link
+                target="_blank"
+                to={
+                  "https://www.linkedin.com/in/luca-sberna-full-stack-developer/"
+                }
+                className="text-reset _blank"
+              >
+                <BsLinkedin className="img-hover fs-3" />
+              </Link>
             </div>
           </div>
         </Col>
