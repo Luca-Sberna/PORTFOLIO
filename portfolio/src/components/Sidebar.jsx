@@ -12,7 +12,7 @@ const Sidebar = () => {
       <Col className="d-flex justify-content-center align-items-center">
         <GiHamburgerMenu className="fs-3 mt-2" />
       </Col>
-
+      <Col></Col>
       <div className="justify-content-center align-items-center d-flex flex-column ">
         <Col className="flex-grow-1">
           <CiUser className="fs-3" />
@@ -25,8 +25,10 @@ const Sidebar = () => {
         </Col>
       </div>
 
+      <Col></Col>
+      <Col></Col>
       <Col className="d-flex justify-content-center align-items-center">
-        <AiOutlineDownload className="fs-2 " />
+        <AiOutlineDownload className="fs-2 red" />
       </Col>
     </Row>
   );
