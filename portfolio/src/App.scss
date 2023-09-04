@@ -30,6 +30,16 @@
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
+.img-hover-contact {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.img-hover-contact:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  color: rgba(193, 15, 15, 0.855);
+}
 
 .custom-bg {
   background-image: url("../src/assets/imgs/5.webp"); // Percorso all'immagine di sfondo

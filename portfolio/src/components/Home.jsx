@@ -18,8 +18,8 @@ const Home = () => {
           <img fluid src={foto} alt={foto} className="foto position-absolute" />
           <div className="social position-absolute bottom-0 text-center  ">
             <h1>Luca Sberna</h1>
-            <span className="red py-4">Full Stack Developer</span>
-            <div className="text-center">
+            <span className="red py-4 fw-bold">Full Stack Developer</span>
+            <div className="text-center pt-2">
               <Link
                 target="_blank"
                 to={"https://github.com/Luca-Sberna"}

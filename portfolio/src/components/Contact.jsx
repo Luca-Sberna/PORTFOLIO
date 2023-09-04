@@ -1,6 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "./Sidebar";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -30,6 +34,31 @@ const Contact = () => {
               ></iframe>
             </Col>
           </Row>
+          <div className="pt-5 d-flex justify-content-around">
+            <Link
+              target="_blank"
+              to={
+                "https://www.linkedin.com/in/luca-sberna-full-stack-developer/"
+              }
+              className="text-reset _blank"
+            >
+              <FaLinkedinIn className="fs-1 img-hover-contact" />
+            </Link>
+            <Link
+              target="_blank"
+              to={"https://github.com/Luca-Sberna"}
+              className="text-reset "
+            >
+              <FiGithub className="fs-1 img-hover-contact" />
+            </Link>
+            <Link
+              target="_blank"
+              to={`mailto:${"sberna.luca.ibiza@gmail.com"}`}
+              className="text-reset "
+            >
+              <HiOutlineMail className="fs-1 img-hover-contact" />
+            </Link>
+          </div>
         </Col>
       </Row>
     </Container>
