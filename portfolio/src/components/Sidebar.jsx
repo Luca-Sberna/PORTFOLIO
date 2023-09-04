@@ -22,12 +22,18 @@ const Sidebar = () => {
           <GiHamburgerMenu className="img-hover fs-3 mt-2" />
         </Link>
       </Col>
+
       <Col></Col>
+      <Col></Col>
+      <Col></Col>
+      <Col></Col>
+      <Col></Col>
+
       <div className="justify-content-center align-items-center d-flex flex-column ">
         <Col className="flex-grow-1">
           <Link
             to={"/"}
-            className={` ${isActivePage("/") ? "red" : "text-reset"}`}
+            className={` ${isActivePage("/") ? "red" : "text-second"}`}
           >
             <CiUser className="img-hover fs-3" />
           </Link>
@@ -35,7 +41,7 @@ const Sidebar = () => {
         <Col className="flex-grow-1 py-3">
           <Link
             to={"/jobs"}
-            className={` ${isActivePage("/jobs") ? "red" : "text-reset"}`}
+            className={` ${isActivePage("/jobs") ? "red" : "text-second"}`}
           >
             <PiBagSimpleFill className="img-hover fs-3" />
           </Link>
@@ -43,7 +49,7 @@ const Sidebar = () => {
         <Col className="flex-grow-1">
           <Link
             to={"/contact"}
-            className={` ${isActivePage("/contact") ? "red" : "text-reset"}`}
+            className={` ${isActivePage("/contact") ? "red" : "text-second"}`}
           >
             <BsFillChatFill className="img-hover fs-3" />
           </Link>
@@ -52,6 +58,10 @@ const Sidebar = () => {
 
       <Col></Col>
       <Col></Col>
+      <Col></Col>
+      <Col></Col>
+      <Col></Col>
+
       <Col className="d-flex justify-content-center align-items-center">
         <a href="/pdf/CV-Luca-Sberna.pdf" download>
           <AiOutlineDownload className="img-hover fs-2 red" />
