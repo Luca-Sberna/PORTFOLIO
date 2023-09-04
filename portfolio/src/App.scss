@@ -49,6 +49,15 @@
 
   // Altri stili, se necessario
 }
+.custom-bg-projects {
+  background-image: url("../src/assets/imgs/6.jpg"); // Percorso all'immagine di sfondo
+  background-size: cover; // Per adattare l'immagine al container
+  background-position: center; // Posizione dell'immagine al centro
+  background-repeat: no-repeat; // Non ripetere l'immagine
+  z-index: 0;
+
+  // Altri stili, se necessario
+}
 
 .vertical-center-container {
   align-items: center;
