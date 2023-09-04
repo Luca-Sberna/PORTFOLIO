@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <Container className=" position-relative">
       <Row>
-        <Col xs={"1"}>
+        <Col xs={"1"} className="template-secondary bg-secondary">
           <Sidebar />
         </Col>
-        <Col xs={"5"} className=" justify-content-center d-flex ">
+        <Col xs={"4"} className=" justify-content-center d-flex ">
           <img fluid src={foto} alt={foto} className="foto position-absolute" />
           <div className="social position-absolute bottom-0 text-center  ">
             <h1>Luca Sberna</h1>
@@ -23,7 +23,7 @@ const Home = () => {
             </div>
           </div>
         </Col>
-        <Col className="p-3 ps-5">
+        <Col className="p-3 ps-5 bg-secondary template-secondary">
           <h2 className="fw-bold">Su di me</h2>
           <div className="d-flex gap-4">
             <p className="fw-bold">27 anni</p>
