@@ -69,13 +69,11 @@ const Jobs = () => {
                 </Nav.Item>
               </Nav>
             </Card.Header>
+
             <Card.Body>
               {/* Mostra le card solo per la categoria selezionata */}
               {selectedCategory === "Full Stack" && (
-                <Card
-                  style={{ width: "18rem" }}
-                  className="position-relative custom-bg-projects img-hover"
-                >
+                <Card className="card-job position-relative custom-bg-projects img-hover">
                   <Card.Body className="text-white">
                     <Card.Title>
                       <span className="red fw-bold">Capstone Project</span>
@@ -107,7 +105,7 @@ const Jobs = () => {
                 <Row className="gap-5">
                   <Card
                     style={{ width: "18rem" }}
-                    className="position-relative custom-bg-projects img-hover"
+                    className="card-job position-relative custom-bg-projects img-hover"
                   >
                     <Card.Body className="text-white">
                       <Card.Title>
@@ -133,7 +131,7 @@ const Jobs = () => {
 
                   <Card
                     style={{ width: "18rem" }}
-                    className="position-relative custom-bg-projects img-hover"
+                    className="card-job position-relative custom-bg-projects img-hover"
                   >
                     <Card.Body className="text-white">
                       <Card.Title>
@@ -159,7 +157,7 @@ const Jobs = () => {
 
                   <Card
                     style={{ width: "18rem" }}
-                    className="position-relative custom-bg-projects img-hover"
+                    className="card-job position-relative custom-bg-projects img-hover"
                   >
                     <Card.Body className="text-white">
                       <Card.Title>
@@ -185,7 +183,7 @@ const Jobs = () => {
 
                   <Card
                     style={{ width: "18rem" }}
-                    className="position-relative custom-bg-projects img-hover"
+                    className="card-job position-relative custom-bg-projects img-hover"
                   >
                     <Card.Body className="text-white">
                       <Card.Title>
@@ -215,7 +213,7 @@ const Jobs = () => {
                 <Row className="gap-5">
                   <Card
                     style={{ width: "18rem" }}
-                    className="position-relative custom-bg-projects img-hover h-75"
+                    className="card-job position-relative custom-bg-projects img-hover h-75"
                   >
                     <Card.Body className="text-white">
                       <Card.Title>
@@ -244,7 +242,7 @@ const Jobs = () => {
 
                   <Card
                     style={{ width: "18rem" }}
-                    className="position-relative custom-bg-projects img-hover"
+                    className="card-job position-relative custom-bg-projects img-hover"
                   >
                     <Card.Body className="text-white">
                       <Card.Title>

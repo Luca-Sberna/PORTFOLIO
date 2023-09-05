@@ -3,7 +3,7 @@
   height: 800px;
   background-size: cover;
   z-index: 1;
-  top: 1.7rem;
+  top: -1rem;
   box-shadow: 0px 0px 15px 5px black;
 }
 .social {
@@ -62,5 +62,14 @@
 .vertical-center-container {
   align-items: center;
   justify-content: center;
-  padding-top: 3rem;
+  margin-top: 3rem;
+  box-shadow: 0px 16px 45px 11px black;
+}
+
+.card-job {
+  width: 18rem;
+  box-shadow: 0px 2px 10px 1px black;
+}
+.card-job:hover {
+  box-shadow: 0px 5px 10px 3px black;
 }

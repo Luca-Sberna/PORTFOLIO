@@ -63,7 +63,7 @@ const Sidebar = () => {
       <Col></Col>
 
       <Col className="d-flex justify-content-center align-items-center">
-        <a href="/pdf/CV-Luca-Sberna.pdf" download>
+        <a href="/pdf/CV-Sberna-Luca.pdf" download>
           <AiOutlineDownload className="img-hover fs-2 red" />
         </a>
       </Col>

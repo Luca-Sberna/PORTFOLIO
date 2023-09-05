@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import foto from "../assets/imgs/foto.png";
+import foto from "../assets/imgs/foto-2.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
               </Link>
               <Link
                 target="_blank"
-                to={`mailto:${"sberna.luca.ibiza@gmail.com"}`}
+                to={`mailto:${"sberna.luca.dev@gmail.com"}`}
                 className="text-reset "
               >
                 <MdEmail className="img-hover fs-3 me-3" />
