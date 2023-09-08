@@ -1,12 +1,24 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Sidebar from "./Sidebar";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import foto from "../assets/imgs/foto-2.png";
 import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
+import {
+  BiLogoCss3,
+  BiLogoJava,
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoSass,
+  BiLogoSpringBoot,
+} from "react-icons/bi";
+import { TbBrandRedux } from "react-icons/tb";
+import { SiPostman } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { DiGit } from "react-icons/di";
 
 const Home = () => {
   return (
@@ -66,7 +78,22 @@ const Home = () => {
             md={"7"}
             className="info py-5 px-4 p-md-3  bg-color template-secondary"
           >
-            <h2 className="fw-bold text-white">Su di me</h2>
+            <div className="d-flex align-items-center justify-content-between">
+              <h2 className="fw-bold text-white">Su di me</h2>
+              <div className="d-none d-xl-block">
+                <AiFillHtml5 className="fs-1 text-danger" />
+                <BiLogoCss3 className="fs-1 text-primary" />
+                <BiLogoJavascript className="fs-1 text-warning" />
+                <DiGit className="fs-1 text-danger" />
+                <FaBootstrap className="fs-1 violet" />
+                <BiLogoReact className="fs-1 azure" />
+                <TbBrandRedux className="fs-1 purple" />
+                <BiLogoSass className="fs-1 text-danger" />
+                <BiLogoJava className="fs-1 text-primary java " />
+                <BiLogoSpringBoot className="fs-1 text-success" />
+                <SiPostman className="fs-1 orange" />
+              </div>
+            </div>
             <div className="d-flex gap-4">
               <p className="red fw-bold">27 anni</p>
               <span className="text-second">/</span>
@@ -74,9 +101,7 @@ const Home = () => {
             </div>
             <p className="text-second">
               Sono un appassionato sviluppatore Full Stack con una fervida
-              dedizione per il mio settore. Sono sempre aperto a nuove
-              opportunità, inclusa la possibilità di una rilocazione, purché si
-              tratti di una proposta stimolante. Il mio ambiente di lavoro è
+              dedizione per il mio settore. Il mio ambiente di lavoro è
               altamente efficiente, dotato di un computer di ultima generazione
               e una configurazione a doppio schermo che mi consente di
               massimizzare la produttività. Questo mi permette di gestire
@@ -88,6 +113,19 @@ const Home = () => {
               queste competenze mi renderà un professionista più completo e
               preparato per affrontare le sfide del futuro.
             </p>
+            <div className="d-xl-none ">
+              <AiFillHtml5 className="fs-1 text-danger" />
+              <BiLogoCss3 className="fs-1 text-primary" />
+              <BiLogoJavascript className="fs-1 text-warning" />
+              <DiGit className="fs-1 text-danger" />
+              <FaBootstrap className="fs-1 violet" />
+              <BiLogoReact className="fs-1 azure" />
+              <TbBrandRedux className="fs-1 purple" />
+              <BiLogoSass className="fs-1 text-danger" />
+              <BiLogoJava className="fs-1 text-primary java " />
+              <BiLogoSpringBoot className="fs-1 text-success" />
+              <SiPostman className="fs-1 orange" />
+            </div>
             <hr className="text-second" />
             <h3 className="py-2 fw-bold text-white">I miei Servizi</h3>
             <Row>

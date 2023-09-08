@@ -16,7 +16,7 @@ const Topbar = () => {
     return location.pathname === pathname;
   };
   return (
-    <div className="topbar w-100 px-2 bg-custom  d-flex justify-content-between align-items-center">
+    <div className="topbar  w-100 px-2 bg-custom  d-flex justify-content-between align-items-center ">
       <div>
         <Link to={"/"} className="red">
           <img src={logo} alt={logo} className="logo pt-1 h-75" />
@@ -44,10 +44,13 @@ const Topbar = () => {
         </Link>
       </div>
 
-      <div className="right">
+      <div className="right position-relative">
         <a href="/pdf/CV-Sberna-Luca.pdf" download>
           <AiOutlineDownload className="img-hover fs-2 red" />
         </a>
+        <div className="position-absolute cv-topbar fw-bold red bounce-left">
+          CV
+        </div>
       </div>
     </div>
   );

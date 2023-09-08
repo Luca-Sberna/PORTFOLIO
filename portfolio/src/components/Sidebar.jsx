@@ -17,19 +17,17 @@ const Sidebar = () => {
   };
 
   return (
-    <Row className="sidebar flex-column g-5 d-flex align-items-center">
+    <Row className="sidebar flex-column g-5 d-flex align-items-center position-relative">
       <Col className="d-flex justify-content-center align-items-center">
         <Link to={"/"} className="red">
           <img src={logo} alt={logo} className="logo pt-1" />
         </Link>
       </Col>
-
       <Col></Col>
       <Col></Col>
       <Col></Col>
       <Col></Col>
       <Col></Col>
-
       <div className="justify-content-center align-items-center d-flex flex-column ">
         <Col className="flex-grow-1">
           <Link
@@ -56,13 +54,12 @@ const Sidebar = () => {
           </Link>
         </Col>
       </div>
-
       <Col></Col>
       <Col></Col>
       <Col></Col>
       <Col></Col>
       <Col></Col>
-
+      <div className="position-absolute cv fw-bold red bounce">CV</div>
       <Col className="d-flex justify-content-center align-items-center">
         <a href="/pdf/CV-Sberna-Luca.pdf" download>
           <AiOutlineDownload className="img-hover fs-2 red" />
