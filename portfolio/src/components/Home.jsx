@@ -10,8 +10,8 @@ import Topbar from "./Topbar";
 
 const Home = () => {
   return (
-    <div className="custom-bg">
-      <Col className="d-md-none">
+    <div className="custom-bg ">
+      <Col className="d-md-none ">
         <Topbar />
       </Col>
       <Container className="px-0 position-relative vertical-center-container">
@@ -62,7 +62,10 @@ const Home = () => {
               </div>
             </div>
           </Col>
-          <Col md={"7"} className=" p-3 ps-5 bg-color template-secondary">
+          <Col
+            md={"7"}
+            className="py-5 px-3 p-md-3  bg-color template-secondary"
+          >
             <h2 className="fw-bold text-white">Su di me</h2>
             <div className="d-flex gap-4">
               <p className="red fw-bold">27 anni</p>

@@ -15,8 +15,8 @@ const Topbar = () => {
     return location.pathname === pathname;
   };
   return (
-    <div className="topbar w-100 px-4  d-flex justify-content-between align-items-center">
-      <div className="left">
+    <div className="topbar w-100 px-4 pe-4 bg-custom  d-flex justify-content-between align-items-center">
+      <div>
         <Link to={"/"} className="red">
           <GiHamburgerMenu className="img-hover fs-3" />
         </Link>
