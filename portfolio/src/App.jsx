@@ -7,7 +7,7 @@ import Jobs from "./components/Jobs";
 
 function App() {
   return (
-    <Container fluid className="custom-bg pt-5 vh-100 ">
+    <Container fluid className="px-0">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

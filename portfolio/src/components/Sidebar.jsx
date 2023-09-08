@@ -16,7 +16,7 @@ const Sidebar = () => {
   };
 
   return (
-    <Row className="flex-column g-5 d-flex align-items-center">
+    <Row className="sidebar flex-column g-5 d-flex align-items-center">
       <Col className="d-flex justify-content-center align-items-center">
         <Link className="red">
           <GiHamburgerMenu className="img-hover fs-3 mt-2" />
