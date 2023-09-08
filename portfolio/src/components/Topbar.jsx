@@ -6,6 +6,7 @@ import { CiUser } from "react-icons/ci";
 import { PiBagSimpleFill } from "react-icons/pi";
 import { BsFillChatFill } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/imgs/Laries Script2.png";
 
 const Topbar = () => {
   const location = useLocation(); // Ottieni la posizione corrente
@@ -18,7 +19,7 @@ const Topbar = () => {
     <div className="topbar w-100 px-2 bg-custom  d-flex justify-content-between align-items-center">
       <div>
         <Link to={"/"} className="red">
-          <GiHamburgerMenu className="img-hover fs-3" />
+          <img src={logo} alt={logo} className="logo pt-1 h-75" />
         </Link>
       </div>
 

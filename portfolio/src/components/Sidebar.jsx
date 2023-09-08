@@ -6,6 +6,7 @@ import { CiUser } from "react-icons/ci";
 import { PiBagSimpleFill } from "react-icons/pi";
 import { BsFillChatFill } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/imgs/Laries Script2.png";
 
 const Sidebar = () => {
   const location = useLocation(); // Ottieni la posizione corrente
@@ -18,8 +19,8 @@ const Sidebar = () => {
   return (
     <Row className="sidebar flex-column g-5 d-flex align-items-center">
       <Col className="d-flex justify-content-center align-items-center">
-        <Link className="red">
-          <GiHamburgerMenu className="img-hover fs-3 mt-2" />
+        <Link to={"/"} className="red">
+          <img src={logo} alt={logo} className="logo pt-1" />
         </Link>
       </Col>
 

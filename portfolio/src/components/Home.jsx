@@ -39,25 +39,25 @@ const Home = () => {
                 <Link
                   target="_blank"
                   to={"https://github.com/Luca-Sberna"}
-                  className="text-reset "
+                  className="red  "
                 >
-                  <AiFillGithub className="img-hover fs-3 me-3" />
+                  <AiFillGithub className="img-hover fs-2 bg-black rounded-3" />
                 </Link>
                 <Link
                   target="_blank"
                   to={`mailto:${"sberna.luca.dev@gmail.com"}`}
-                  className="text-reset "
+                  className="red mx-3 "
                 >
-                  <MdEmail className="img-hover fs-3 me-3" />
+                  <MdEmail className="img-hover fs-2 bg-black rounded-3" />
                 </Link>
                 <Link
                   target="_blank"
                   to={
                     "https://www.linkedin.com/in/luca-sberna-full-stack-developer/"
                   }
-                  className="text-reset _blank"
+                  className=" _blank red "
                 >
-                  <BsLinkedin className="img-hover fs-3" />
+                  <BsLinkedin className="img-hover fs-2 p-1 bg-black rounded-3" />
                 </Link>
               </div>
             </div>
