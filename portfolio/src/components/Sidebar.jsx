@@ -17,7 +17,7 @@ const Sidebar = () => {
   };
 
   return (
-    <Row className="sidebar flex-column g-5 d-flex align-items-center position-relative">
+    <Row className="sidebar py-1 flex-column g-5 d-flex align-items-center position-relative">
       <Col className="d-flex justify-content-center align-items-center">
         <Link to={"/"} className="red">
           <img src={logo} alt={logo} className="logo pt-1" />
