@@ -128,4 +128,64 @@
 .info {
   max-height: 47.7rem;
   overflow-y: auto;
+  scrollbar-width: thin; /* Nasconde la barra dello scroll in Firefox */
+  scrollbar-color: red transparent; /* Colore rosso per la barra dello scroll */
+
+  /* Rimuovi le frecce dello scroll */
+  scrollbar-arrow-color: transparent;
+
+  /* Imposta i bordi neri */
+  scrollbar-track-color: transparent;
+}
+
+.info::-webkit-scrollbar {
+  width: 6px; /* Larghezza della barra dello scroll */
+}
+
+.info::-webkit-scrollbar-track {
+  background: transparent; /* Colore di sfondo della traccia dello scroll */
+}
+
+.info::-webkit-scrollbar-thumb {
+  background-color: red; /* Colore rosso per il "pollice" dello scroll */
+  border: 1px solid black; /* Bordo nero per il "pollice" dello scroll */
+  border-radius: 4px; /* Bordo arrotondato per il "pollice" dello scroll */
+}
+
+.info::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Colore del "pollice" dello scroll al passaggio del mouse */
+}
+
+/* Barra di scorrimento verticale */
+::-webkit-scrollbar {
+  width: 12px; /* Larghezza della barra di scorrimento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 1px solid red; /* Colore del "pollice" della barra di scorrimento */
+  border-radius: 8px; /* Bordo arrotondato per il "pollice" della barra di scorrimento */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Colore della traccia della barra di scorrimento */
+}
+
+/* Barra di scorrimento orizzontale */
+::-webkit-scrollbar-horizontal {
+  height: 12px; /* Altezza della barra di scorrimento orizzontale */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #000000; /* Colore del "pollice" della barra di scorrimento orizzontale */
+  border-radius: 6px; /* Bordo arrotondato per il "pollice" della barra di scorrimento orizzontale */
+}
+
+::-webkit-scrollbar-track:horizontal {
+  background-color: #f0f0f0; /* Colore della traccia della barra di scorrimento orizzontale */
 }
