@@ -92,7 +92,7 @@
   background-repeat: no-repeat; // Non ripetere l'immagine
   padding-block: 1.4rem;
   min-height: 100vh;
-  padding-right: 0.8rem;
+  overflow: hidden;
   // Altri stili, se necessario
 }
 .custom-bg-projects {
@@ -124,4 +124,8 @@
   top: 0;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.561);
+}
+.info {
+  max-height: 47.7rem;
+  overflow-y: auto;
 }

@@ -64,7 +64,7 @@ const Home = () => {
           </Col>
           <Col
             md={"7"}
-            className="py-5 px-3 p-md-3  bg-color template-secondary"
+            className="info py-5 px-4 p-md-3  bg-color template-secondary"
           >
             <h2 className="fw-bold text-white">Su di me</h2>
             <div className="d-flex gap-4">
