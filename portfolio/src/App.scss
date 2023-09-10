@@ -48,18 +48,15 @@
   z-index: 20;
   bottom: 1rem;
 }
-@media screen and (max-width: 1400px) {
-  .social {
-    bottom: unset;
-  }
-}
+
 @media screen and (max-width: 991px) {
   .social {
     bottom: 0rem;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(0, 0, 0);
     width: 15.7rem;
     padding: 1rem;
     color: #f0f0f0;
+    box-shadow: 0px 0px 15px 1px black;
   }
 }
 

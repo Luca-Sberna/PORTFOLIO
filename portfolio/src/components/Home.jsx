@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import foto from "../assets/imgs/foto-2.png";
+import foto from "../assets/imgs/foto2.png";
 import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
 import {
