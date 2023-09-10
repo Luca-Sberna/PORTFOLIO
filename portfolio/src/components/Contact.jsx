@@ -25,7 +25,7 @@ const Contact = () => {
             <h1 className="text-white fw-bold pb-4">Contatti</h1>
             <Col className="text-white fw-bold fs-5">Informazioni</Col>
             <Row>
-              <Col className="d-flex">
+              <Col className="d-flex pb-3">
                 <Col>
                   <Col className="text-second">Via Filippo De Pisis 13</Col>
                   <Col className="text-second">

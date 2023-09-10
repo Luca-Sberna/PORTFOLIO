@@ -7,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import bgProject from "../assets/imgs/6.jpg";
 import { FiGithub } from "react-icons/fi";
 import Topbar from "./Topbar";
+import { BiSolidLeftArrowAlt } from "react-icons/bi";
 
 const Jobs = () => {
   const [selectedCategory, setSelectedCategory] = useState("Full Stack"); // Imposta la categoria predefinita
@@ -106,6 +107,7 @@ const Jobs = () => {
                       >
                         <FiGithub className="fs-2 img-hover-contact" />
                       </Card.Link>
+                      <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                     </Card.Body>
                   </Card>
                 )}
@@ -134,7 +136,8 @@ const Jobs = () => {
                           href="https://github.com/Luca-Sberna/REACT-W3-PROJECT-LINKEDIN"
                         >
                           <FiGithub className="fs-2 img-hover-contact" />
-                        </Card.Link>
+                        </Card.Link>{" "}
+                        <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                       </Card.Body>
                     </Card>
 
@@ -160,7 +163,8 @@ const Jobs = () => {
                           href="https://github.com/Luca-Sberna/spotify-clone"
                         >
                           <FiGithub className="fs-2 img-hover-contact" />
-                        </Card.Link>
+                        </Card.Link>{" "}
+                        <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                       </Card.Body>
                     </Card>
 
@@ -186,7 +190,8 @@ const Jobs = () => {
                           href="https://github.com/Luca-Sberna/netflix-cone"
                         >
                           <FiGithub className="fs-2 img-hover-contact" />
-                        </Card.Link>
+                        </Card.Link>{" "}
+                        <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                       </Card.Body>
                     </Card>
 
@@ -212,7 +217,8 @@ const Jobs = () => {
                           href="https://github.com/Luca-Sberna/weather-project"
                         >
                           <FiGithub className="fs-2 img-hover-contact" />
-                        </Card.Link>
+                        </Card.Link>{" "}
+                        <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                       </Card.Body>
                     </Card>
                   </Row>
@@ -245,7 +251,8 @@ const Jobs = () => {
                           href="https://github.com/Luca-Sberna/JAVA-U1-BW"
                         >
                           <FiGithub className="fs-2 img-hover-contact" />
-                        </Card.Link>
+                        </Card.Link>{" "}
+                        <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                       </Card.Body>
                     </Card>
 
@@ -277,7 +284,8 @@ const Jobs = () => {
                           href="https://github.com/Luca-Sberna/JAVA-U2-BW"
                         >
                           <FiGithub className="fs-2 img-hover-contact" />
-                        </Card.Link>
+                        </Card.Link>{" "}
+                        <BiSolidLeftArrowAlt className="fs-3 bounce-right red" />
                       </Card.Body>
                     </Card>
                   </Row>
