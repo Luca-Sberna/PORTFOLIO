@@ -1,5 +1,5 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Col, Container, Row, Spinner } from "react-bootstrap";
 import Sidebar from "./Sidebar";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
@@ -8,6 +8,24 @@ import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
 
 const Contact = () => {
+  const [isMapLoading, setMapLoading] = useState(true); // Inizialmente impostato su true per mostrare lo spinner
+
+  // Simula il caricamento della mappa per 2 secondi (puoi personalizzare la durata)
+  useEffect(() => {
+    setTimeout(() => {
+      setMapLoading(false); // Imposta lo stato su false dopo 2 secondi
+    }, 1000); // Imposta il ritardo a 2000 millisecondi (2 secondi)
+  }, []);
+
+  const mapLoadingComponent = isMapLoading ? (
+    <Spinner
+      variant="danger"
+      animation="border"
+      role="status"
+      className="fs-1 d-flex justify-content-center mt-5"
+    ></Spinner>
+  ) : null;
+
   return (
     <div className="custom-bg">
       <Col className="d-md-none">
@@ -34,15 +52,22 @@ const Contact = () => {
                   <Col className="text-second">sberna.luca.dev@gmail.com</Col>
                 </Col>
               </Col>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.911564927643!2d9.138328476608587!3d45.51185883025697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c05b2a961a4d%3A0x32b1d0c6043181c7!2sVia%20Filippo%20de%20Pisis%2C%2013%2C%2020157%20Milano%20MI!5e0!3m2!1ses!2sit!4v1693843109216!5m2!1ses!2sit"
-                width="400"
-                height="350"
-                style={{ border: "0" }} // Utilizzo di un oggetto JavaScript per gli stili
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              {/* Mostra la mappa solo quando il caricamento è completato */}
+              {!isMapLoading ? (
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.911564927643!2d9.138328476608587!3d45.51185883025697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c05b2a961a4d%3A0x32b1d0c6043181c7!2sVia%20Filippo%20de%20Pisis%2C%2013%2C%2020157%20Milano%20MI!5e0!3m2!1ses!2sit!4v1693843109216!5m2!1ses!2sit"
+                  width="400"
+                  height="350"
+                  style={{ border: "0" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              ) : (
+                <div className="d-flex justify-content-center">
+                  {mapLoadingComponent}
+                </div>
+              )}
             </Row>
             <div className="pt-5 d-flex justify-content-around">
               <Link

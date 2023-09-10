@@ -21,7 +21,7 @@
 .foto {
   width: 450px;
   height: 800px;
-  background-size: cover;
+  background-size: contain;
   z-index: 1;
   top: -1rem;
   box-shadow: 0px 0px 15px 5px black;
@@ -41,7 +41,7 @@
 @media screen and (max-width: 992px) {
   .foto {
     width: 250px;
-    height: 800px;
+    height: 656px;
   }
 }
 .social {
@@ -51,6 +51,15 @@
 @media screen and (max-width: 1400px) {
   .social {
     bottom: unset;
+  }
+}
+@media screen and (max-width: 991px) {
+  .social {
+    bottom: 0rem;
+    background-color: rgb(10, 10, 10);
+    width: 15.7rem;
+    padding: 1rem;
+    color: #f0f0f0;
   }
 }
 
@@ -93,7 +102,7 @@
 }
 
 .img-hover:hover {
-  transform: scale(1.2);
+  transform: scale(1.14);
   transition: all 0.2s ease-in-out;
 }
 .img-hover-contact {
@@ -106,7 +115,7 @@
   transition: all 0.2s ease-in-out;
   color: rgba(193, 15, 15, 0.855);
 }
-
+/* BACKGROUND CARD */
 .custom-bg {
   background-image: url("../src/assets/imgs/5.webp"); // Percorso all'immagine di sfondo
   background-size: cover; // Per adattare l'immagine al container
@@ -118,13 +127,97 @@
   // Altri stili, se necessario
 }
 .custom-bg-projects {
-  background-image: url("../src/assets/imgs/6.jpg"); // Percorso all'immagine di sfondo
+  background-image: url("../src/assets/imgs/bg-back.jpg"); // Percorso all'immagine di sfondo
+  background-size: cover; // Per adattare l'immagine al container
+  background-position: center; // Posizione dell'immagine al centro
+  background-repeat: repeat-y; // Non ripetere l'immagine
+  z-index: 0;
+
+  // Altri stili, se necessario
+}
+.custom-bg-projects-linkedin {
+  background-image: url("../src/assets/imgs/LA.png"); // Percorso all'immagine di sfondo
   background-size: cover; // Per adattare l'immagine al container
   background-position: center; // Posizione dell'immagine al centro
   background-repeat: no-repeat; // Non ripetere l'immagine
   z-index: 0;
+  animation: backgroundScrollLa 6s infinite; /* Modifica la durata e l'iterazione secondo le tue preferenze */
 
   // Altri stili, se necessario
+}
+@keyframes backgroundScrollLa {
+  0% {
+    background-image: url("../src/assets/imgs/LA.png");
+  }
+  50% {
+    background-image: url("../src/assets/imgs/LA2.png");
+  }
+}
+
+.custom-bg-projects-spotify {
+  background-image: url("../src/assets/imgs/SA.png"); // Percorso all'immagine di sfondo
+  background-size: cover; // Per adattare l'immagine al container
+  background-position: center; // Posizione dell'immagine al centro
+  background-repeat: repeat-y; // Non ripetere l'immagine
+  z-index: 0;
+  animation: backgroundScrollSa 6s infinite; /* Modifica la durata e l'iterazione secondo le tue preferenze */
+
+  // Altri stili, se necessario
+}
+@keyframes backgroundScrollSa {
+  0% {
+    background-image: url("../src/assets/imgs/SA.png");
+  }
+  50% {
+    background-image: url("../src/assets/imgs/SA2.png");
+  }
+  75% {
+    background-image: url("../src/assets/imgs/SA3.png");
+  }
+}
+
+.custom-bg-projects-weather {
+  background-image: url("../src/assets/imgs/WA.png"); // Percorso all'immagine di sfondo
+  background-size: cover; // Per adattare l'immagine al container
+  background-position: center; // Posizione dell'immagine al centro
+  background-repeat: no-repeat; // Non ripetere l'immagine
+  z-index: 0;
+  animation: backgroundScrollWa 6s infinite; /* Modifica la durata e l'iterazione secondo le tue preferenze */
+
+  // Altri stili, se necessario
+}
+@keyframes backgroundScrollWa {
+  0% {
+    background-image: url("../src/assets/imgs/WA.png");
+  }
+  50% {
+    background-image: url("../src/assets/imgs/WA2.png");
+  }
+}
+
+.custom-bg-projects-capstone {
+  background-image: url("../src/assets/imgs/CA.png"); // Percorso all'immagine di sfondo
+  background-size: cover; // Per adattare l'immagine al container
+  background-position: center; // Posizione dell'immagine al centro
+  background-repeat: repeat-y; // Non ripetere l'immagine
+  z-index: 0;
+  animation: backgroundScroll 6s infinite; /* Modifica la durata e l'iterazione secondo le tue preferenze */
+
+  // Altri stili, se necessario
+}
+@keyframes backgroundScroll {
+  0% {
+    background-image: url("../src/assets/imgs/CA.png");
+  }
+  25% {
+    background-image: url("../src/assets/imgs/CA2.png");
+  }
+  50% {
+    background-image: url("../src/assets/imgs/CA3.png");
+  }
+  75% {
+    background-image: url("../src/assets/imgs/CA4.png");
+  }
 }
 
 .vertical-center-container {

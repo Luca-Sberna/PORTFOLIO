@@ -2,10 +2,12 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';
+import LoadingSlice from '../slices/LoadingSlice';
 
 const rootReducer = combineReducers({
     //cart: cartReducer,
     //settings: settingsReducer,
+    loading: LoadingSlice
     // Aggiungi altri reducer qui come i commenti sopra
 });
 

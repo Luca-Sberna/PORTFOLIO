@@ -1,5 +1,5 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Col, Container, Row, Spinner } from "react-bootstrap";
 import Sidebar from "./Sidebar";
 import { AiFillGithub, AiFillHtml5 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
@@ -19,8 +19,39 @@ import { TbBrandRedux } from "react-icons/tb";
 import { SiPostman } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
+import { startLoading, stopLoading } from "../redux/slices/LoadingSlice"; // Importa le azioni
+import { useDispatch } from "react-redux";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const [isImageLoading, setImageLoading] = useState(true);
+  const loadingComponent = isImageLoading ? (
+    <Spinner
+      variant="danger"
+      animation="border"
+      role="status"
+      className="fs-1 d-flex justify-content-center mt-5"
+    ></Spinner>
+  ) : null;
+
+  useEffect(() => {
+    // Simula un caricamento immagine
+    const image = new Image();
+    image.src = foto;
+
+    image.onload = () => {
+      dispatch(stopLoading()); // Immagine caricata, ferma lo stato di caricamento
+      setImageLoading(false);
+    };
+
+    image.onerror = () => {
+      dispatch(stopLoading()); // Gestire l'errore di caricamento se necessario
+      setImageLoading(false);
+    };
+
+    dispatch(startLoading()); // Inizia lo stato di caricamento prima di caricare l'immagine
+  }, [dispatch]);
+
   return (
     <div className="custom-bg ">
       <Col className="d-md-none ">
@@ -32,11 +63,13 @@ const Home = () => {
             <Sidebar />
           </Col>
           <Col xs={"4"} className=" justify-content-center d-flex ">
+            {loadingComponent}
+
             <img
               fluid
               src={foto}
               alt={foto}
-              className="foto d-none d-md-block position-absolute"
+              className="foto d-none d-md-block position-absolute "
             />
             <img
               fluid
